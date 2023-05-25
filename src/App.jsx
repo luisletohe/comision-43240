@@ -1,16 +1,16 @@
-import Footer from "./Footer";
-import Home from "./Home";
-import { Navbar } from "./Navbar";
+import Navbar from "../components/layout/navbar/Navbar";
+import { ProductsList } from "../components/pages/ItemListContainer/productslist";
 
-const App = () => {
+const app = () => {
+  let nombre = "ALE";
+  let edad = 22;
+
   return (
-    <>
-      <h1>Este es el app</h1>
+    <div>
       <Navbar />
-      <Home />
-      <Footer />
-    </>
+      <ProductsList nombre={nombre} edad={edad} />
+    </div>
   );
 };
 
-export default App;
+export default app;
